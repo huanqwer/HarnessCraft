@@ -64,6 +64,8 @@
 
 当然，随着你不断Harness Coding，你的工程化思维和提示词prompt能力也会有相应的提升，你也可以在这个过程中去探索新的适合你的工具产品。
 
+![个人能力维度与工具选择关系](./assets/ability-dimensions.png)
+
 
 
 ---
@@ -159,6 +161,8 @@
 
 而这部分被节省下来的探索成本，同样应当被计算到工具的最终价值中。
 
+![Coding Agent社区资源生态闭环](./assets/community-ecosystem.png)
+
 
 
 ---
@@ -182,6 +186,8 @@
 | 对话Coding Agent | 需求澄清、方案设计、完整任务交付 | 描述目标和验收标准 |
 | IDE Coding Agent | 局部修改、界面调整、边写边验证 | 围绕当前代码持续迭代 |
 | CLI Coding Agent | 批量修改、脚本执行、工程自动化 | 给出明确任务并让Agent自主执行 |
+
+![三类Harness Coding工具的组合协作流程](./assets/tool-combination.png)
 
 当然，对于刚刚开始Harness Coding的同学，笔者并不建议一开始就同时学习大量工具。
 
@@ -229,6 +235,8 @@ Coding Agent生成第一版代码的速度，往往很容易给人带来震撼�
 * 当第一次方案失败时，它是否能够定位原因并继续推进？
 
 能够稳定走完整个闭环的工具，才更有可能成为陪伴你长期战斗的“绝世好刀”。
+
+![Harness Coding工具验证闭环指标](./assets/validation-loop.png)
 
 
 

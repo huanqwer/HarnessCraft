@@ -12,6 +12,8 @@
 
 **像管理一个公司一样去管理你的Agents和Harness Coding项目**
 
+![像管理公司一样管理AI Agents的组织架构](./assets/manage-agents-like-company.png)
+
 
 
 为什么要这么做呢？
@@ -71,6 +73,8 @@ AI Harness Coding到了一定阶段
 让他们互相协同但是互不干扰
 
 最终成为一条流水线上的螺丝钉（大厂人应该都有这种感受吧）
+
+![AI Agent流水线协作模式](./assets/agent-pipeline.png)
 
 
 

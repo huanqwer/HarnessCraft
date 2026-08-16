@@ -46,6 +46,8 @@ Harness Coding的工具现在有很多选择
 
    好的Agent还会有沙箱机制防止底层模型删库跑路
 
+![Harness Coding工具梯队对比与自建API方案对比](./assets/tool-tiers.png)
+
 
 
 再说说我自己的工具选择
