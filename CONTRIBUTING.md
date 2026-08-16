@@ -1,12 +1,12 @@
 # 贡献指南
 
-感谢您对 VibeCraft 项目的关注！我们欢迎各种形式的贡献。
+感谢您对 HarnessCraft 项目的关注！我们欢迎各种形式的贡献。
 
 ## 如何贡献
 
 ### 报告问题
 
-如果您发现了 bug 或有功能建议，请在 [GitHub Issues](https://github.com/huanqwer/VibeCraft/issues) 中提交。
+如果您发现了 bug 或有功能建议，请在 [GitHub Issues](https://github.com/huanqwer/HarnessCraft/issues) 中提交。
 
 提交 issue 时，请尽可能提供：
 - 清晰的描述
