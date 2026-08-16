@@ -1,4 +1,4 @@
-# VibeCoding工具的选择
+# HarnessCoding工具的选择
 
 [TOC]
 
@@ -26,7 +26,7 @@
 
 > 序言毕
 
-![三类Vibe Coding工具通向同一个产品交付目标](../assets/vibe-coding-tool-paths.png)
+![三类Harness Coding工具通向同一个产品交付目标](../assets/vibe-coding-tool-paths.png)
 
 
 
@@ -40,9 +40,9 @@
 
 ### 1.1 个人能力维度
 
-闲言少叙，我相信能看到这篇文章的读者，已经对Vibe Coding有了一些基本的认知。
+闲言少叙，我相信能看到这篇文章的读者，已经对Harness Coding有了一些基本的认知。
 
-所以我们不再赘述，而是直接来聊一聊如何快速选择符合自己的Vibe工具。
+所以我们不再赘述，而是直接来聊一聊如何快速选择符合自己的Harness工具。
 
 首先我们来问自己几个问题：
 
@@ -62,7 +62,7 @@
 | Cursor一类的IDE Agent        | 3~5                       |
 | Codex一类的对话Coding Agent  | 0~5                       |
 
-当然，随着你不断Vibe Coding，你的工程化思维和提示词prompt能力也会有相应的提升，你也可以在这个过程中去探索新的适合你的工具产品。
+当然，随着你不断Harness Coding，你的工程化思维和提示词prompt能力也会有相应的提升，你也可以在这个过程中去探索新的适合你的工具产品。
 
 
 
@@ -72,9 +72,9 @@
 
 ### 1.2 成本和效益维度
 
-![Vibe Coding工具总交付成本的显性与隐性构成](../assets/vibe-coding-total-cost.png)
+![Harness Coding工具总交付成本的显性与隐性构成](../assets/vibe-coding-total-cost.png)
 
-选择Vibe Coding工具的时候，成本是一个无论如何都绕不开的话题。
+选择Harness Coding工具的时候，成本是一个无论如何都绕不开的话题。
 
 当然这里的成本，并不单纯指每个月订阅工具所需要支付的几十或者几百美元。
 
@@ -167,7 +167,7 @@
 
 ### 1.4 最终形态
 
-聊完上述三个维度后，我们终于可以回答最开始的问题：到底应该选择什么样的Vibe Coding工具？
+聊完上述三个维度后，我们终于可以回答最开始的问题：到底应该选择什么样的Harness Coding工具？
 
 笔者认为，最终的答案并不是固定选择Claude Code、Cursor或者Codex中的某一个，而是形成一套符合自己工作习惯的工具组合。
 
@@ -183,7 +183,7 @@
 | IDE Coding Agent | 局部修改、界面调整、边写边验证 | 围绕当前代码持续迭代 |
 | CLI Coding Agent | 批量修改、脚本执行、工程自动化 | 给出明确任务并让Agent自主执行 |
 
-当然，对于刚刚开始Vibe Coding的同学，笔者并不建议一开始就同时学习大量工具。
+当然，对于刚刚开始Harness Coding的同学，笔者并不建议一开始就同时学习大量工具。
 
 工具越多，带来的上下文切换和配置成本也越高。
 
@@ -234,7 +234,7 @@ Coding Agent生成第一版代码的速度，往往很容易给人带来震撼�
 
 ## 叁、结语
 
-写到这里，相信你已经发现，Vibe Coding工具的选择，本质上仍然是一次架构权衡。
+写到这里，相信你已经发现，Harness Coding工具的选择，本质上仍然是一次架构权衡。
 
 ![将不同Coding Agent工作流锻造成适合自己的绝世好刀](../assets/vibe-coding-legendary-tool.png)
 
