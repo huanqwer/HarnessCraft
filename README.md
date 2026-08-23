@@ -59,7 +59,7 @@ AI在Harness Coding的表现中越来越稳定
 
 其中一个项目在历经了约8个月的Harness Coding后代码量达到了接近50万行
 
-![image-20260518111145648](./assets/image-20260518111145648.png)
+![image-20260518111145648](https://res.cloudinary.com/isieghiq/image/upload/v1787445811/harnesscraft/403bbdd9d0e86a5defd7575ebbc8200b4874af3b.png)
 
 并且上线后已稳定运行了约半年的时间
 
@@ -83,7 +83,7 @@ AI在Harness Coding的表现中越来越稳定
 
 ISIER 描述了一个任务从"用户意图"到"反思归档"的完整主线流程，每一层是前一层的下游。**Rollback 不作为独立一层，而是贯穿五层的横切原则**——任意一层失败时都需要有可执行的安全网。
 
-![ISIER 五层 Harness 落地架构](./assets/isier-architecture.png)
+![ISIER 五层 Harness 落地架构](https://res.cloudinary.com/isieghiq/image/upload/v1787445815/harnesscraft/6b3d61a533f27f6eb273466f258171f17152cfdd.png)
 
 ### Intent 意图层
 
@@ -120,7 +120,7 @@ Rollback 不是流程节点，而是保障 ISIER 安全执行的横切机制，�
 | Eval | 验收失败时触发 Rollback |
 | Refl | 反思 Rollback 是否有效，沉淀回滚经验 |
 
-![Harness 任务执行流程](./assets/harness-task-flow.png)
+![Harness 任务执行流程](https://res.cloudinary.com/isieghiq/image/upload/v1787445818/harnesscraft/eb6d5a31b07882bc303534ababc6c197434a2912.png)
 
 ## 实践案例：5 人团队 0 手写代码
 
@@ -132,7 +132,7 @@ Rollback 不是流程节点，而是保障 ISIER 安全执行的横切机制，�
   - 已完成 **2 个项目**的开发
   - 另有 **3 个商用项目**立项
 
-![用户与 Agent 协作旅程](./assets/user-agent-journey.png)
+![用户与 Agent 协作旅程](https://res.cloudinary.com/isieghiq/image/upload/v1787445822/harnesscraft/eed2c7887a86a1f486a649b12a0a71a038178d67.png)
 
 实践证明，在完善的 Harness 约束下，团队无需手写代码即可稳定交付商业级项目，开发者角色从"代码编写者"转变为"Harness 设计者与提示词工程师"。
 

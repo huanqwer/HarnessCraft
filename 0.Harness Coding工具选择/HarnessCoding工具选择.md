@@ -26,7 +26,7 @@
 
 > 序言毕
 
-![三类Harness Coding工具通向同一个产品交付目标](../assets/harness-coding-tool-paths.png)
+![三类Harness Coding工具通向同一个产品交付目标](https://res.cloudinary.com/isieghiq/image/upload/v1787445778/harnesscraft/08b5ae35ddc8a8cadc1aec44c027c5e125b731ec.png)
 
 
 
@@ -64,7 +64,7 @@
 
 当然，随着你不断Harness Coding，你的工程化思维和提示词prompt能力也会有相应的提升，你也可以在这个过程中去探索新的适合你的工具产品。
 
-![个人能力维度与工具选择关系](./assets/ability-dimensions.png)
+![个人能力维度与工具选择关系](https://res.cloudinary.com/isieghiq/image/upload/v1787445781/harnesscraft/ac0253868fcf2e2c9f0b64ad26f83e26cee6cfb5.png)
 
 
 
@@ -74,7 +74,7 @@
 
 ### 1.2 成本和效益维度
 
-![Harness Coding工具总交付成本的显性与隐性构成](../assets/harness-coding-total-cost.png)
+![Harness Coding工具总交付成本的显性与隐性构成](https://res.cloudinary.com/isieghiq/image/upload/v1787445785/harnesscraft/c8efe3ca34bd81c492e13ea2371012a422129433.png)
 
 选择Harness Coding工具的时候，成本是一个无论如何都绕不开的话题。
 
@@ -161,7 +161,7 @@
 
 而这部分被节省下来的探索成本，同样应当被计算到工具的最终价值中。
 
-![Coding Agent社区资源生态闭环](./assets/community-ecosystem.png)
+![Coding Agent社区资源生态闭环](https://res.cloudinary.com/isieghiq/image/upload/v1787445788/harnesscraft/1a3756e9727ef83220cade8c207990b7e9785486.png)
 
 
 
@@ -187,7 +187,7 @@
 | IDE Coding Agent | 局部修改、界面调整、边写边验证 | 围绕当前代码持续迭代 |
 | CLI Coding Agent | 批量修改、脚本执行、工程自动化 | 给出明确任务并让Agent自主执行 |
 
-![三类Harness Coding工具的组合协作流程](./assets/tool-combination.png)
+![三类Harness Coding工具的组合协作流程](https://res.cloudinary.com/isieghiq/image/upload/v1787445791/harnesscraft/73dda42487d7657ffe99ff937c5c512927b26572.png)
 
 当然，对于刚刚开始Harness Coding的同学，笔者并不建议一开始就同时学习大量工具。
 
@@ -236,7 +236,7 @@ Coding Agent生成第一版代码的速度，往往很容易给人带来震撼�
 
 能够稳定走完整个闭环的工具，才更有可能成为陪伴你长期战斗的“绝世好刀”。
 
-![Harness Coding工具验证闭环指标](./assets/validation-loop.png)
+![Harness Coding工具验证闭环指标](https://res.cloudinary.com/isieghiq/image/upload/v1787445795/harnesscraft/e48a1e1a335e5f4fd379330e38c5c07d56c680bc.png)
 
 
 
@@ -244,7 +244,7 @@ Coding Agent生成第一版代码的速度，往往很容易给人带来震撼�
 
 写到这里，相信你已经发现，Harness Coding工具的选择，本质上仍然是一次架构权衡。
 
-![将不同Coding Agent工作流锻造成适合自己的绝世好刀](../assets/harness-coding-legendary-tool.png)
+![将不同Coding Agent工作流锻造成适合自己的绝世好刀](https://res.cloudinary.com/isieghiq/image/upload/v1787445799/harnesscraft/d50a1615c81abe1e88d28189ae1280cb181cbc83.png)
 
 我们需要在能力、成本、易用性、生态和可控性之间做出取舍。
 

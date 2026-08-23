@@ -64,3 +64,10 @@ temp/
 .devin/
 *.bak.*
 *.bak
+
+# Cloudinary credentials (never commit to remote repo)
+**/cloudinary_config.json
+**/cloudinary_config*.json
+**/.cloudinary.env
+**/cloudinary*.env
+memes/

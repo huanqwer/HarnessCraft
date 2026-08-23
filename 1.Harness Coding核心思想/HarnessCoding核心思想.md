@@ -12,7 +12,7 @@
 
 **像管理一个公司一样去管理你的Agents和Harness Coding项目**
 
-![像管理公司一样管理AI Agents的组织架构](./assets/manage-agents-like-company.png)
+![像管理公司一样管理AI Agents的组织架构](https://res.cloudinary.com/isieghiq/image/upload/v1787445647/harnesscraft/cbb0b52429b60192087f71b824f6e73cbda4629d.png)
 
 
 
@@ -50,7 +50,7 @@ AI要去处理新的需求会占用越来越多的上下文
 
 （下图：作者Harness Coding的商业化SaaS项目结构）
 
-![image-20260518151953156](./assets/image-20260518151953156.png)
+![image-20260518151953156](https://res.cloudinary.com/isieghiq/image/upload/v1787445804/harnesscraft/58c8334386f2ab9766d2cdb8ed3cfc0a048cd644.png)
 
 所以就像最开始的单体应用发展到一定阶段后
 
@@ -74,7 +74,7 @@ AI Harness Coding到了一定阶段
 
 最终成为一条流水线上的螺丝钉（大厂人应该都有这种感受吧）
 
-![AI Agent流水线协作模式](./assets/agent-pipeline.png)
+![AI Agent流水线协作模式](https://res.cloudinary.com/isieghiq/image/upload/v1787445808/harnesscraft/77d6f92ea5dd445cdfeb34fdda7b605ca8d4bd67.png)
 
 
 
@@ -106,6 +106,412 @@ AI Harness Coding到了一定阶段
 
 为我们的软件编写需求文档
 
+但是通常一个人并不能完成整个传统软件工程的交付
+
+所以需要将工程进行拆分
+
+“分而治之”
+
+AI时代亦复如是
+
 
 
 ## 常见的AI工程拆分思路
+
+既然要基于人员角色来拆分
+
+那我们就顺着软件诞生史往下走
+
+看看一个软件从0到1
+
+到底有哪些角色参与
+
+每个角色又对应着什么样的"数字员工"
+
+### 需求阶段：BA需求分析师
+
+软件的起点是"我要"
+
+但"我要"往往是模糊的
+
+需要BA去澄清、去拆解
+
+去把模糊的市场需求翻译成清晰的PRD
+
+对应的数字员工就是
+
+负责意图识别和Spec契约生成的Agent
+
+它通过反复确认模糊部分
+
+把用户的"我要"变成可执行的Spec文档
+
+### 设计阶段：架构师
+
+需求清晰之后
+
+架构师开始介入
+
+做技术选型、做系统设计
+
+定义模块边界和数据流向
+
+对应的数字员工是
+
+负责架构设计和技术决策的Agent
+
+它沉淀了项目的技术栈记忆
+
+每一次架构演进都会被记录下来
+
+### 开发阶段：前端工程师 + 后端工程师
+
+这是最重头的部分
+
+前端负责UI实现和交互
+
+后端负责API和业务逻辑
+
+对应的数字员工各自带着专属的Skills
+
+前端的组件库规范、UI约定
+
+后端的数据模型、业务规则
+
+互不干扰又互相协同
+
+### 质量阶段：测试工程师
+
+代码写完了不代表能用
+
+测试工程师要验收
+
+对应的数字员工是
+
+负责Eval验收的Agent
+
+它带着缺陷模式记忆和测试基线
+
+对照Spec文档逐项验证
+
+不通过就反哺前面的流程
+
+### 运维阶段：运维工程师
+
+验收通过后要部署上线
+
+运维工程师负责发布、监控、告警
+
+对应的数字员工带着部署配置记忆
+
+和历次故障案例
+
+让每一次发布都更稳
+
+### 持续进化：成本控制 + 自我进化
+
+商业项目不能只顾着跑
+
+还要算成本、还要持续进化
+
+这两个角色对应的数字员工
+
+一个盯着token消耗和模型选择
+
+一个盯着Harness环境本身的完善
+
+让整套体系越用越顺
+
+![数字员工角色拆分矩阵](https://res.cloudinary.com/isieghiq/image/upload/v1787447795/harnesscraft/dfe211f2fc00a23cf6479138bde465a72a104381.png)
+
+可以看到
+
+每个角色都有自己专属的Skills、Memories、产出物
+
+就像公司里每个岗位都有明确的职责边界
+
+这样拆分之后
+
+每个Agent的上下文都是聚焦的
+
+不会因为代码量增长而失控
+
+
+
+不过光是角色拆分还不够
+
+我们还要知道
+
+这些数字员工之间是怎么协作的
+
+接下来这张图展示了一条典型的数字员工协作流水线
+
+每个角色接收上游输入、执行本角色任务、产出给下游
+
+产出物沿着流水线从左往右流转
+
+最终变成可运行的软件
+
+![数字员工协作流水线](https://res.cloudinary.com/isieghiq/image/upload/v1787448599/harnesscraft/7d1c3202e98eed22e6fbdefee3bda7d2adf8024c.png)
+
+是不是觉得有点复杂
+
+一个人要管这么多数字员工
+
+光是指挥他们就已经很累了
+
+![无奈](https://res.cloudinary.com/isieghiq/image/upload/v1787450289/harnesscraft/afd905f1b777de4e560dac4c20dc7a35d49da49f.jpg)
+
+
+
+所以
+
+仅靠"拆分"和"流水线"
+
+还不足以让这套体系稳定运转
+
+我们还需要一套统一的工作方法
+
+告诉这些数字员工：
+
+什么时候该干什么
+
+产出什么
+
+验收什么
+
+失败了怎么办
+
+这就是接下来要讲的 ISIER
+
+## ISIER：让数字员工流水线运转起来的方法论
+
+光把数字员工拆出来还不够
+
+还得让他们能协同起来
+
+这就需要一套统一的工作流
+
+我把它叫做ISIER
+
+取自五层首字母
+
+- **I** — Intent 意图层：识别用户意图，生成标准Spec和Plan
+- **S** — Spec 契约层：基于SDD和TDD思想，生成标准化文档和验收清单
+- **I** — Impl 执行层：注入上下文执行任务，基于ReAct不断修正
+- **E** — Eval 验收层：自我测试，通知用户验收，不满意则loop前四步
+- **R** — Refl 反思层：更新Agent上下文，归档文档，完善Harness环境
+
+ISIER描述了一个任务从"用户意图"到"反思归档"的完整主线流程
+
+每一层是前一层的下游
+
+![ISIER 五层 Harness 落地架构](https://res.cloudinary.com/isieghiq/image/upload/v1787445815/harnesscraft/6b3d61a533f27f6eb273466f258171f17152cfdd.png)
+
+这套流程不是凭空设计的
+
+而是在长期和Agent协作的过程中
+
+被反复打磨出来的
+
+每一个环节都对应着真实踩过的坑
+
+比如Intent层为什么要反复确认
+
+因为AI最容易在模糊意图上跑偏
+
+你以为是A它理解成B
+
+最后交付一个四不像
+
+比如Spec层为什么要先写契约再执行
+
+因为不写契约的执行
+
+就像没有图纸就盖楼
+
+盖到一半发现地基歪了
+
+再比如Eval层为什么要loop
+
+因为一次验收通过是理想情况
+
+现实往往是验收-反馈-调整-再验收
+
+直到真正符合预期
+
+
+
+所以ISIER不是一个单行道
+
+它是一个带反馈环的工作流
+
+每一层都可能回到上一层
+
+这种"螺旋式推进"才是工程化的常态
+
+理解了这一点
+
+就不会对AI的反复修改感到不耐烦
+
+![不OK](https://res.cloudinary.com/isieghiq/image/upload/v1787450256/harnesscraft/a8579b4e89187d0b386cb70022772a128916dd1a.jpg)
+
+## Rollback：贯穿始终的安全网
+
+ISIER五层之外
+
+还有一个贯穿始终的原则
+
+就是Rollback（回滚）
+
+它不是独立的一层
+
+而是保障ISIER安全执行的横切机制
+
+在每一层都有对应的职责
+
+| 层级 | Rollback 职责 |
+|------|---------------|
+| Intent | 识别风险任务，初步评估回滚必要性 |
+| Spec | 定义验收标准时同步定义回滚标准 |
+| Impl | 执行前必须确认Rollback方案存在 |
+| Eval | 验收失败时触发Rollback |
+| Refl | 反思Rollback是否有效，沉淀回滚经验 |
+
+![Harness 任务执行流程](https://res.cloudinary.com/isieghiq/image/upload/v1787445818/harnesscraft/eb6d5a31b07882bc303534ababc6c197434a2912.png)
+
+为什么要强调Rollback
+
+因为AI执行任务是有副作用的
+
+它会改代码、会改配置、会删文件
+
+如果没有回滚方案
+
+一次失败的执行可能就让项目陷入泥潭
+
+所以我给自己定了一条硬约束
+
+任何任务执行之前必须要有Rollback方案
+
+无方案就STOP
+
+多方案就STOP
+
+方案失效就STOP
+
+宁可慢一点
+
+也不能让Agent裸奔
+
+
+
+这套机制看起来有点保守
+
+但和商业项目的稳定性比起来
+
+多花几分钟确认回滚方案
+
+完全是值得的
+
+![紧张](https://res.cloudinary.com/isieghiq/image/upload/v1787450258/harnesscraft/b17a78d0d8a8c3b85ab2a18461a570e4acb44da6.jpg)
+
+## 实践出真知：5人团队0手写代码
+
+说了这么多方法论
+
+最终还是要落到实践上
+
+这套Harness方法论
+
+已经应用在我所在的5人开发团队
+
+强制要求全员使用提示词工程
+
+在Harness架构下开发
+
+0手写代码
+
+所有代码由Agent在Harness约束下生成
+
+截至2026年8月23日
+
+已完成2个项目的开发
+
+另有3个商用项目立项
+
+![用户与 Agent 协作旅程](https://res.cloudinary.com/isieghiq/image/upload/v1787445822/harnesscraft/eed2c7887a86a1f486a649b12a0a71a038178d67.png)
+
+实践证明
+
+在完善的Harness约束下
+
+团队无需手写代码即可稳定交付商业级项目
+
+开发者角色从"代码编写者"
+
+转变为"Harness设计者与提示词工程师"
+
+说实话一开始让团队全员放弃手写代码
+
+大家是有点慌的
+
+毕竟写代码是我们安身立命的本事
+
+![崩溃](https://res.cloudinary.com/isieghiq/image/upload/v1787450283/harnesscraft/d06f312de8de4999670265d4ece01b88533690f9.jpg)
+
+但跑通之后发现
+
+当Harness搭好之后
+
+人的精力从"怎么实现"转移到了"要做什么"和"怎么验收"
+
+反而更聚焦在真正有价值的事情上
+
+## 写在最后
+
+Harness Coding的核心思想
+
+其实就一句话
+
+像管理一个公司一样去管理你的Agents
+
+把AI当成数字员工
+
+给它们明确的职责边界
+
+给它们专属的知识沉淀
+
+给它们统一的工作流程
+
+给它们可靠的安全网
+
+然后让它们各司其职
+
+协同流水线作业
+
+这听起来有点像把人变成螺丝钉
+
+![愤怒](https://res.cloudinary.com/isieghiq/image/upload/v1787450286/harnesscraft/4ce72509af3ccfece234d312ae99cfc25c0a5b2d.jpg)
+
+但换个角度想
+
+当流水线搭好之后
+
+作为"Harness设计者"的你
+
+终于可以从重复的编码劳动中解放出来
+
+去做更有创造性的工作
+
+去思考产品、思考市场、思考方向
+
+![坚定](https://res.cloudinary.com/isieghiq/image/upload/v1787450287/harnesscraft/6e9ac23a429cef436161b18d06ff65c466d3662f.jpg)
+
+这或许就是Harness Coding
+
+带给软件行业OPC的最大价值
+
+下一章我们会具体讲讲
+
+Harness Coding的工具选择
