@@ -62,3 +62,5 @@ temp/
 
 # Devin agent config (local only, not tracked)
 .devin/
+*.bak.*
+*.bak

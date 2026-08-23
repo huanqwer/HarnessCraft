@@ -1,4 +1,4 @@
-# 1.Harness Coding核心思想
+# HarnessCoding核心思想
 
 最近OPC（One Person Company即一人公司）的概念炒的比较火
 

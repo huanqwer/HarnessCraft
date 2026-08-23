@@ -26,7 +26,7 @@
 
 > 序言毕
 
-![三类Harness Coding工具通向同一个产品交付目标](../assets/vibe-coding-tool-paths.png)
+![三类Harness Coding工具通向同一个产品交付目标](../assets/harness-coding-tool-paths.png)
 
 
 
@@ -74,7 +74,7 @@
 
 ### 1.2 成本和效益维度
 
-![Harness Coding工具总交付成本的显性与隐性构成](../assets/vibe-coding-total-cost.png)
+![Harness Coding工具总交付成本的显性与隐性构成](../assets/harness-coding-total-cost.png)
 
 选择Harness Coding工具的时候，成本是一个无论如何都绕不开的话题。
 
@@ -244,7 +244,7 @@ Coding Agent生成第一版代码的速度，往往很容易给人带来震撼�
 
 写到这里，相信你已经发现，Harness Coding工具的选择，本质上仍然是一次架构权衡。
 
-![将不同Coding Agent工作流锻造成适合自己的绝世好刀](../assets/vibe-coding-legendary-tool.png)
+![将不同Coding Agent工作流锻造成适合自己的绝世好刀](../assets/harness-coding-legendary-tool.png)
 
 我们需要在能力、成本、易用性、生态和可控性之间做出取舍。
 
