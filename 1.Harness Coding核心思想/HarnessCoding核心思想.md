@@ -1,5 +1,10 @@
 # HarnessCoding核心思想
 
+> 本文章是笔者Harness全系列文章的一部分，如果想要看完整章节请移步我的开源项目：
+> https://github.com/huanqwer/HarnessCraft
+> 如果觉得写的好，请在github帮忙点一个免费的star
+> 不胜感激
+
 最近OPC（One Person Company即一人公司）的概念炒的比较火
 
 当然我理解的OPC相对来说要狭义一点
