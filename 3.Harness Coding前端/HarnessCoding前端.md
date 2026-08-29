@@ -31,6 +31,9 @@ AI生成前端页面的能力已经非常强大
 
 隔着一整个太平洋
 
+![无奈](https://res.cloudinary.com/isieghiq/image/upload/v1787450289/harnesscraft/afd905f1b777de4e560dac4c20dc7a35d49da49f.jpg)
+
+
 这个矛盾就是AI时代前端的第一个痛点
 
 **生成容易，收敛难**
@@ -144,6 +147,9 @@ AI在第一次生成时几乎不会主动覆盖
 
 
 ## 2. 我的团队如何产出设计语言一致的前端页面
+
+![前端设计语言约束体系](https://res.cloudinary.com/isieghiq/image/upload/v1787990202/harnesscraft/0471082748c476f264f13c9db9411398320b3b5f.png)
+
 
 聊完痛点
 
@@ -444,6 +450,9 @@ AI在生成前端代码时
 
 
 ## 4. 你设计的UI是给市场而非个人
+
+![市场导向UI设计流程](https://res.cloudinary.com/isieghiq/image/upload/v1787990198/harnesscraft/197dd51acebe7857de19f2def1832b9a4b75f0ef.png)
+
 
 最后
 

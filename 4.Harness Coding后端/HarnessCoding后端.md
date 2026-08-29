@@ -13,6 +13,9 @@
 
 ## 1. 我已经2年没有写过代码了
 
+![震惊](https://res.cloudinary.com/isieghiq/image/upload/v1787450283/harnesscraft/d06f312de8de4999670265d4ece01b88533690f9.jpg)
+
+
 这个标题不是夸张
 
 是事实
@@ -74,6 +77,9 @@
 
 
 ## 2. AI时代下要转变的思维定势
+
+![传统开发 vs Harness开发](https://res.cloudinary.com/isieghiq/image/upload/v1787990183/harnesscraft/3dc033d2339579a17d419f5290b6985c54c8e0a7.png)
+
 
 从"写代码"到"指挥AI写代码"
 
@@ -379,6 +385,9 @@ AI是不知道的
 
 
 ## 4. AI时代下的后端架构设计
+
+![后端架构五原则](https://res.cloudinary.com/isieghiq/image/upload/v1787990200/harnesscraft/99c6c278a7a6b4ac0b7f63587c9fe85e633507ba.png)
+
 
 聊完思维和知识
 

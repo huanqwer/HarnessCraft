@@ -13,6 +13,9 @@
 
 ## 1. CICD还有必要吗？
 
+![Harness CICD标准流程](https://res.cloudinary.com/isieghiq/image/upload/v1787990268/harnesscraft/66624bfbebf1c9b0c2dd1410fc6c4916d61ff526.png)
+
+
 每次讲到运维
 
 总有人问我一个问题
@@ -377,6 +380,9 @@ L3是人工的
 
 ## 4. 可观测、可验证、可回滚
 
+![运维三原则闭环](https://res.cloudinary.com/isieghiq/image/upload/v1787990436/harnesscraft/04eb8a3ef0a5278945c20a9e433be0c6b7574422.png)
+
+
 这三个词
 
 是Harness Coding运维的三大支柱
@@ -554,6 +560,9 @@ Agent在实现代码时
 **编码可以激进
 
 运维必须保守**
+
+![严肃](https://res.cloudinary.com/isieghiq/image/upload/v1787450258/harnesscraft/b17a78d0d8a8c3b85ab2a18461a570e4acb44da6.jpg)
+
 
 CICD自动化 + 安全红线 + 回滚优先 + 可观测/可验证/可回滚
 

@@ -13,6 +13,12 @@
 
 ## 1. 永远不要相信AI
 
+![警惕](https://res.cloudinary.com/isieghiq/image/upload/v1787450256/harnesscraft/a8579b4e89187d0b386cb70022772a128916dd1a.jpg)
+
+
+![AI测试六大盲区](https://res.cloudinary.com/isieghiq/image/upload/v1787990213/harnesscraft/827a1c91bc5a64903b2002a6e841c18e872fe958.png)
+
+
 这一章的开篇语可能有点扎眼
 
 但这是我在Harness Coding中
@@ -167,6 +173,9 @@ Refl层可以AI自动反思
 
 
 ## 2. 结果导向在Harness当中的重要性
+
+![测试金字塔对比](https://res.cloudinary.com/isieghiq/image/upload/v1787990257/harnesscraft/e4b6b030a8d52a0b9cfa8af37b51b4cdc0f64636.png)
+
 
 在Harness Coding中
 

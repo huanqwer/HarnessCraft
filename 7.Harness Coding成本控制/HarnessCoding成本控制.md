@@ -13,6 +13,9 @@
 
 ## 1. 我们是如何进行开发工作的
 
+![5人团队产能对比](https://res.cloudinary.com/isieghiq/image/upload/v1787990238/harnesscraft/2d182cc9680b026d4d73cecb252d7177a9adb474.png)
+
+
 在聊具体的成本控制策略之前
 
 我想先介绍一下我们团队的实际工作方式
@@ -121,6 +124,9 @@
 
 
 ## 2. 我们是如何选择模型的
+
+![模型选型矩阵](https://res.cloudinary.com/isieghiq/image/upload/v1787990253/harnesscraft/3448e2f8d5c8474516b7b635475311b28075fdf9.png)
+
 
 模型选择是Harness Coding成本控制的核心
 
@@ -245,6 +251,9 @@ Agent可以"升级"到更强的模型
 
 
 ## 3. 时刻关注官方政策，能白嫖绝不花钱
+
+![得意](https://res.cloudinary.com/isieghiq/image/upload/v1787990171/harnesscraft/7f399c7b61ea5d47e531e0ca3df44ef19122252d.jpg)
+
 
 这一节可能是整本书最"实用"的一节
 

@@ -13,6 +13,9 @@
 
 ## 1. 一次完整的Harness内部落地流程
 
+![ISIER完整落地流程](https://res.cloudinary.com/isieghiq/image/upload/v1787990312/harnesscraft/3167ad18b8582e03236f70c1f209133923aa5328.png)
+
+
 这一节
 
 我用一个真实的例子
@@ -424,6 +427,9 @@ Harness环境也需要"重构"
 
 ## 4. 团队管理
 
+![团队标准对比](https://res.cloudinary.com/isieghiq/image/upload/v1787990300/harnesscraft/da76e87a66ddf4a49c0e4f3956250ebfab978cc6.png)
+
+
 Harness Coding模式下的团队管理
 
 跟传统模式有很大不同
@@ -554,6 +560,9 @@ Harness Coding团队需要的文化
 ### 6.1 给OPC的忠告
 
 **忠告一：你是指挥官，不是执行者**
+
+![坚定](https://res.cloudinary.com/isieghiq/image/upload/v1787450287/harnesscraft/6e9ac23a429cef436161b18d06ff65c466d3662f.jpg)
+
 
 作为OPC
 
