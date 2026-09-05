@@ -10,7 +10,6 @@
 ---
 
 
-
 ## 1. 一次完整的Harness内部落地流程
 
 ![ISIER完整落地流程](https://res.cloudinary.com/isieghiq/image/upload/v1787990312/harnesscraft/3167ad18b8582e03236f70c1f209133923aa5328.png)
@@ -212,7 +211,6 @@
 ---
 
 
-
 ## 2. 0到1如何落地
 
 上一节展示了一次功能开发的完整流程
@@ -358,7 +356,6 @@ project/
 ---
 
 
-
 ## 3. 1到多如何重构
 
 当项目从1个产品扩展到多个产品时
@@ -422,7 +419,6 @@ Harness环境也需要"重构"
 - 保留旧环境一周作为兜底
 
 ---
-
 
 
 ## 4. 团队管理
@@ -499,7 +495,6 @@ Harness Coding团队需要的文化
 ---
 
 
-
 ## 5. 市场调研
 
 即使是技术团队
@@ -550,7 +545,6 @@ Harness Coding团队需要的文化
 ---
 
 
-
 ## 6. 对OPC和AI创业公司的忠告
 
 最后一节
@@ -560,8 +554,6 @@ Harness Coding团队需要的文化
 ### 6.1 给OPC的忠告
 
 **忠告一：你是指挥官，不是执行者**
-
-![坚定](https://res.cloudinary.com/isieghiq/image/upload/v1787450287/harnesscraft/6e9ac23a429cef436161b18d06ff65c466d3662f.jpg)
 
 
 作为OPC
@@ -657,7 +649,6 @@ AI领域变化极快
 只在有明确收益时才切换**
 
 ---
-
 
 
 ## 结语

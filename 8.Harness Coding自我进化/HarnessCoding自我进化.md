@@ -10,10 +10,7 @@
 ---
 
 
-
 ## 1. 别让AI给你shit上雕花
-
-![崩溃](https://res.cloudinary.com/isieghiq/image/upload/v1787450286/harnesscraft/4ce72509af3ccfece234d312ae99cfc25c0a5b2d.jpg)
 
 
 这一章的标题可能有点粗俗
@@ -170,7 +167,6 @@ AI不会拒绝你的请求
 ---
 
 
-
 ## 2. 熵管理
 
 ![熵管理健康仪表盘](https://res.cloudinary.com/isieghiq/image/upload/v1787990288/harnesscraft/0e7056a72010a34d77aa95c2544690dea0f5afb0.png)
@@ -319,7 +315,6 @@ AI不会拒绝你的请求
 ---
 
 
-
 ## 3. 上下文大于一切
 
 ![上下文三层管理](https://res.cloudinary.com/isieghiq/image/upload/v1787990429/harnesscraft/4395dc2ab9b3b7bc5aed8cda313e5358ddbe3c3b.png)
@@ -460,7 +455,6 @@ Agent的输出质量
 是Harness环境"可回滚"的基础
 
 ---
-
 
 
 ## 4. 持续进化的秘籍
@@ -621,7 +615,6 @@ Harness的进化就会停滞
 但构建自己的Harness**
 
 ---
-
 
 
 ## 结语

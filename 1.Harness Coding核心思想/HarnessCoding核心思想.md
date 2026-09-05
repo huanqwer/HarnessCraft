@@ -20,7 +20,6 @@
 ![像管理公司一样管理AI Agents的组织架构](https://res.cloudinary.com/isieghiq/image/upload/v1787445647/harnesscraft/cbb0b52429b60192087f71b824f6e73cbda4629d.png)
 
 
-
 为什么要这么做呢？
 
 其实就是一个分而治之的思想
@@ -34,7 +33,6 @@
 直接告诉AI我们想要什么
 
 然后让它修修改改最后就完工了
-
 
 
 但是商业化的大型项目这个明显是不现实的
@@ -66,7 +64,6 @@ AI要去处理新的需求会占用越来越多的上下文
 就会有大数据一样
 
 
-
 AI Harness Coding到了一定阶段
 
 也需要去做“拆分”
@@ -82,7 +79,6 @@ AI Harness Coding到了一定阶段
 ![AI Agent流水线协作模式](https://res.cloudinary.com/isieghiq/image/upload/v1787445808/harnesscraft/77d6f92ea5dd445cdfeb34fdda7b605ca8d4bd67.png)
 
 
-
 所以只有充分了解在一个软件开发从0到1的过程中
 
 有哪些人员角色参与
@@ -90,11 +86,9 @@ AI Harness Coding到了一定阶段
 我们才能将我们的“数字员工”进行合理的拆分
 
 
-
 为什么要基于人员角色来拆分呢？
 
 因为AI替代的就是人（sad）
-
 
 
 ## 从一个软件的诞生史来学 Harness Coding
@@ -118,7 +112,6 @@ AI Harness Coding到了一定阶段
 “分而治之”
 
 AI时代亦复如是
-
 
 
 ## 常见的AI工程拆分思路
@@ -242,7 +235,6 @@ AI时代亦复如是
 不会因为代码量增长而失控
 
 
-
 不过光是角色拆分还不够
 
 我们还要知道
@@ -264,9 +256,6 @@ AI时代亦复如是
 一个人要管这么多数字员工
 
 光是指挥他们就已经很累了
-
-![无奈](https://res.cloudinary.com/isieghiq/image/upload/v1787450289/harnesscraft/afd905f1b777de4e560dac4c20dc7a35d49da49f.jpg)
-
 
 
 所以
@@ -346,7 +335,6 @@ ISIER描述了一个任务从"用户意图"到"反思归档"的完整主线流�
 直到真正符合预期
 
 
-
 所以ISIER不是一个单行道
 
 它是一个带反馈环的工作流
@@ -359,7 +347,6 @@ ISIER描述了一个任务从"用户意图"到"反思归档"的完整主线流�
 
 就不会对AI的反复修改感到不耐烦
 
-![不OK](https://res.cloudinary.com/isieghiq/image/upload/v1787450256/harnesscraft/a8579b4e89187d0b386cb70022772a128916dd1a.jpg)
 
 ## Rollback：贯穿始终的安全网
 
@@ -410,7 +397,6 @@ ISIER五层之外
 也不能让Agent裸奔
 
 
-
 这套机制看起来有点保守
 
 但和商业项目的稳定性比起来
@@ -419,7 +405,6 @@ ISIER五层之外
 
 完全是值得的
 
-![紧张](https://res.cloudinary.com/isieghiq/image/upload/v1787450258/harnesscraft/b17a78d0d8a8c3b85ab2a18461a570e4acb44da6.jpg)
 
 ## 实践出真知：5人团队0手写代码
 
@@ -463,7 +448,6 @@ ISIER五层之外
 
 毕竟写代码是我们安身立命的本事
 
-![崩溃](https://res.cloudinary.com/isieghiq/image/upload/v1787450283/harnesscraft/d06f312de8de4999670265d4ece01b88533690f9.jpg)
 
 但跑通之后发现
 
@@ -497,7 +481,6 @@ Harness Coding的核心思想
 
 这听起来有点像把人变成螺丝钉
 
-![愤怒](https://res.cloudinary.com/isieghiq/image/upload/v1787450286/harnesscraft/4ce72509af3ccfece234d312ae99cfc25c0a5b2d.jpg)
 
 但换个角度想
 
@@ -511,7 +494,6 @@ Harness Coding的核心思想
 
 去思考产品、思考市场、思考方向
 
-![坚定](https://res.cloudinary.com/isieghiq/image/upload/v1787450287/harnesscraft/6e9ac23a429cef436161b18d06ff65c466d3662f.jpg)
 
 这或许就是Harness Coding
 

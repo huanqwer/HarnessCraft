@@ -10,7 +10,6 @@
 ---
 
 
-
 ## 1. CICD还有必要吗？
 
 ![Harness CICD标准流程](https://res.cloudinary.com/isieghiq/image/upload/v1787990268/harnesscraft/66624bfbebf1c9b0c2dd1410fc6c4916d61ff526.png)
@@ -144,7 +143,6 @@ CICD本身也可以Harness化
 ---
 
 
-
 ## 2. 守住AI部署的安全红线
 
 AI在运维环节最大的风险
@@ -227,7 +225,6 @@ Agent在部署环节**绝对不允许**做的事情
 它也没有权限去做
 
 ---
-
 
 
 ## 3. 一定要"回滚优先"
@@ -375,7 +372,6 @@ L3是人工的
 不允许进入CICD流水线
 
 ---
-
 
 
 ## 4. 可观测、可验证、可回滚
@@ -528,7 +524,6 @@ Agent在实现代码时
 ---
 
 
-
 ## 结语
 
 运维在Harness Coding中
@@ -560,8 +555,6 @@ Agent在实现代码时
 **编码可以激进
 
 运维必须保守**
-
-![严肃](https://res.cloudinary.com/isieghiq/image/upload/v1787450258/harnesscraft/b17a78d0d8a8c3b85ab2a18461a570e4acb44da6.jpg)
 
 
 CICD自动化 + 安全红线 + 回滚优先 + 可观测/可验证/可回滚
