@@ -1,8 +1,8 @@
-# HarnessCoding产品设计
+# 如何让AI设计出优秀的产品
 
-> 本文章是笔者Harness全系列文章的一部分，如果想要看完整章节请移步我的开源项目：
+> 本文章来源于笔者的开源项目，如果觉得只看文章不知如何落地或者想要工程的最佳实践代码，请移步：
 > https://github.com/huanqwer/HarnessCraft
-> 如果觉得写的好，请在github帮忙点一个免费的star
+> 如果觉得对您有帮助，请在github帮忙点一个免费的star
 > 不胜感激
 
 [TOC]

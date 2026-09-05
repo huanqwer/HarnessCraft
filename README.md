@@ -2,38 +2,39 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-一个纯Harness Coding落地的大型商业项目的知识沉淀
+一套完整的 Harness 工程化落地实践——不只是文章，更包含可直接使用并经过实际验证的 Skills、Rules、Workflows、Memories 和工程结构。
 
 通过这个项目你可以了解到：
 
-- 从零开始构建一个AI Harness Coding商业化项目的全流程和要素
-- Harness Coding成本控制方法
-- 必要的AI Harness Coding基础知识
-- 可能未来AI Coding的标准范式
-- 很多可直接使用并且经过实际验证的skills、rules、workflows
+- 从零开始构建一个 AI Harness Coding 商业化项目的全流程和要素
+- Harness Coding 成本控制方法
+- 必要的 AI Harness Coding 基础知识
+- 可能未来 AI Coding 的标准范式
+- 很多可直接使用并且经过实际验证的 Skills、Rules、Workflows
 
 适合人群
 
-* 想学习Harness Coding的同学
-* 想Harness出商业化应用而非小Demo的初创公司或者OPC
-* 想要了解AI时代下传统软件应用架构转型的架构师
+* 想学习 Harness Coding 的同学
+* 想 Harness 出商业化应用而非小 Demo 的初创公司或者 OPC
+* 想要了解 AI 时代下传统软件应用架构转型的架构师
 
 
 
-## 重大变更
+## 项目结构
 
-本项目已由 **VibeCraft** 正式更名为 **HarnessCraft**，GitHub 仓库地址同步迁移至 https://github.com/huanqwer/HarnessCraft 。
+```
+HarnessCraft/
+├── posts/              # 系列文章（平铺，不按章节分组）
+├── .devin/             # 工程化落地实践
+│   ├── skills/         # 可复用 Skills（配图、任务执行、反思等）
+│   ├── rules/          # 全局规则（Rollback、记忆、反思等）
+│   └── ...
+├── README.md
+├── CONTRIBUTING.md
+└── LICENSE
+```
 
-本次更名涉及以下重大变更：
-
-- **项目名称**：`VibeCraft` → `HarnessCraft`
-- **方法论命名**：全工程的 `Vibe Coding` → `Harness Coding`
-- **目录结构**：所有 `N.Vibe Codingxxx` 章节文件夹统一更名为 `N.Harness Codingxxx`
-- **文档与链接**：README、CONTRIBUTING 等文档中的项目名、仓库地址、Issues 链接均已同步更新
-
-**更名原因**：项目最初以 "Vibe Coding" 命名这套与 Agent 协作的方法论。随着业界 "Harness" 概念的兴起，作者发现自身不断优化与 Agent 交互的过程与 Harness 如出一辙。为与行业通用术语对齐、降低理解成本，故将项目与方法论统一更名为 Harness / Harness Coding。
-
-> 历史仓库地址 `https://github.com/huanqwer/VibeCraft` 已通过 GitHub 重定向至新地址，旧链接仍可访问。
+> `.devin/` 目录是本项目的工程化核心，包含实际开发中使用的 Skills、Rules、Workflows 和 Memories。这些不是示例代码，而是真实生产环境中验证过的 Harness 组件。
 
 
 
@@ -138,19 +139,25 @@ Rollback 不是流程节点，而是保障 ISIER 安全执行的横切机制，�
 
 
 
-## 指南
+## 系列文章
 
-本项目的文件夹序号顺序就是推荐阅读顺序
+所有文章平铺在 `posts/` 目录下，推荐按以下顺序阅读：
 
-每个文件夹对应一个主题
+| 序号 | 文章 | 主题 |
+|------|------|------|
+| 1 | [如何选择自己称手的VibeCoding「兵器」](posts/如何选择自己称手的VibeCoding「兵器」.md) | 工具选择 |
+| 2 | [我自研的Harness五层架构原理](posts/我自研的Harness五层架构原理.md) | 核心思想 |
+| 3 | [如何让AI设计出优秀的产品](posts/如何让AI设计出优秀的产品.md) | 产品设计 |
+| 4 | [前端总跑偏？针对前端工程师的Harness](posts/前端总跑偏？针对前端工程师的Harness.md) | 前端 |
+| 5 | [架构思维于Harness的重要性](posts/架构思维于Harness的重要性.md) | 后端架构 |
+| 6 | [AI自验证并纠错通宵跑完任务，我只负责验收](posts/AI自验证并纠错通宵跑完任务，我只负责验收.md) | 后端实践 |
+| 7 | [测试工程师借助AI不完全摸鱼指南](posts/测试工程师借助AI不完全摸鱼指南.md) | 测试 |
+| 8 | [通用上线skill，让AI帮你部署和运维](posts/通用上线skill，让AI帮你部署和运维.md) | 运维 |
+| 9 | [优秀的AI应用工程师需要学会白嫖Token的技巧](posts/优秀的AI应用工程师需要学会白嫖Token的技巧.md) | 成本控制 |
+| 10 | [别人的AI为什么越来越好用](posts/别人的AI为什么越来越好用.md) | 自我进化 |
+| 11 | [看看真实企业内部的Harness+FDE改造如何落地的](posts/看看真实企业内部的Harness+FDE改造如何落地的.md) | 最佳实践 |
 
-文件夹下会有与文件夹同名的 md 文件作为正文
-
-直接阅读即可
-
-当然如果你只对例如skills部分感兴趣
-
-你也可以直接阅读和使用skills下的相关资源
+> 文章正文均由作者手写，配图由 Agent 在配图阶段统一生成技术图表并插入。如果你对文章中提到的 Skills、Rules、Workflows 感兴趣，可以直接查看 `.devin/` 目录下的工程化实现。
 
 
 
