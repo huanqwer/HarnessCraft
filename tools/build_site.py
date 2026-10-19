@@ -254,7 +254,12 @@ def build_index(posts: list, readme_text: str) -> str:
         intro = m.group(0).strip()
     audience = re.search(r"适合人群\s*\n+(?P<body>(?:[ \t]*\*.*\n?)+)", readme_text)
     published = [p for p in posts if not p["draft"]]
+    drafts = len(posts) - len(published)
     latest = max((p["date"] for p in published), default="")
+    meta = ["**Harness 工程化落地实践**", "已发布 %d 篇" % len(published)]
+    if drafts:
+        meta.append("%d 篇待补完" % drafts)
+    meta += ["最近更新 %s" % latest, "MIT License"]
     lines = [
         "---",
         "hide:",
@@ -263,8 +268,7 @@ def build_index(posts: list, readme_text: str) -> str:
         "",
         "# HarnessCraft",
         "",
-        "**Harness 工程化落地实践** · %d 篇文章 · 最近更新 %s · MIT License"
-        % (len(published), latest),
+        " · ".join(meta),
         "",
         intro,
         "",
