@@ -292,7 +292,7 @@ def build_index(posts: list, readme_text: str) -> str:
         "",
         "- 项目主页：<https://github.com/huanqwer/HarnessCraft>",
         "- 发现文章错误或有想补充的实践，欢迎开 [Issue](https://github.com/huanqwer/HarnessCraft/issues) 或 PR。",
-        "- 订阅更新：[RSS](https://huanqwer.github.io/HarnessCraft/feed_rss_created.xml)",
+        "- 订阅更新：[RSS](https://huanqwer.github.io/feed_rss_created.xml)",
         "",
     ]
     return "\n".join(lines)

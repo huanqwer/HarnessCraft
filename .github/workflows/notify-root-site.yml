@@ -1,0 +1,35 @@
+name: 触发根站重建
+
+# 站点发布在 huanqwer.github.io 仓库（内容从本仓库拉取构建）。
+# 默认用根站仓库的定时任务刷新，最长延迟 15 分钟；
+# 想要"push 即发布"，在根站仓库建好之后：
+#   1. 生成一个对 huanqwer.github.io 有 Contents: Read and write 的细粒度 PAT
+#   2. 在本仓库 Settings → Secrets and variables → Actions 里加名为 PAGES_DISPATCH_TOKEN 的 secret
+# 加了 secret 之后本工作流会自动开始工作，不需要再改代码。
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  dispatch:
+    name: 通知根站重建
+    runs-on: ubuntu-latest
+    env:
+      TOKEN: ${{ secrets.PAGES_DISPATCH_TOKEN }}
+    steps:
+      - name: 未配置 PAGES_DISPATCH_TOKEN 时跳过（根站 15 分钟内会自动跟上）
+        if: env.TOKEN == ''
+        run: echo "PAGES_DISPATCH_TOKEN 未配置，跳过即时触发；根站定时任务会刷新。"
+
+      - name: 触发 huanqwer.github.io 的 repository_dispatch
+        if: env.TOKEN != ''
+        run: |
+          curl -sf -X POST \
+            -H "Authorization: Bearer $TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/huanqwer/huanqwer.github.io/dispatches \
+            -d '{"event_type":"content-updated"}'

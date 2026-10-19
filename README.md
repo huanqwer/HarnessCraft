@@ -22,12 +22,13 @@
 
 ## 在线阅读
 
-- 站点（GitHub Pages 免费托管）：<https://huanqwer.github.io/HarnessCraft/>
-- RSS 订阅：<https://huanqwer.github.io/HarnessCraft/feed_rss_created.xml>
-- 全部文章按时间/分类浏览：<https://huanqwer.github.io/HarnessCraft/blog/>
+- 站点（GitHub Pages 免费托管）：<https://huanqwer.github.io/>
+- RSS 订阅：<https://huanqwer.github.io/feed_rss_created.xml>
+- 全部文章按时间/分类浏览：<https://huanqwer.github.io/blog/>
 - 内容与工程化缺口分析： [analysis/gap-analysis.md](analysis/gap-analysis.md)
 
 站点由 `posts/` 自动生成，仓库里的 Markdown 始终是唯一真源。
+构建与发布逻辑放在根站仓库 `huanqwer.github.io`（它只负责拉取本仓库 → 构建 → 发布）。
 
 
 
@@ -193,10 +194,13 @@ mkdocs serve                                   # 本地预览 http://127.0.0.1:8
 mkdocs build --strict                          # 生成 site/（断链、锚点问题直接失败）
 ```
 
-推送到 `main` 后由 `.github/workflows/deploy-pages.yml` 自动发布到 GitHub Pages；
-PR 会先由 `.github/workflows/content-check.yml` 跑一遍体检与严格构建。
+推送到 `main` 后，根站仓库 `huanqwer.github.io` 会拉取本仓库并发布到 <https://huanqwer.github.io/>
+（默认 15 分钟一次的定时刷新；配好下面的 `PAGES_DISPATCH_TOKEN` 后变成 push 即发布）；
+PR 由 `.github/workflows/content-check.yml` 先跑一遍体检与严格构建。
 
-> 首次启用：仓库 Settings → Pages → Source 选择 **GitHub Actions**（免费，无需额外费用）。
+> 首次启用：根站仓库 Settings → Pages → Source 选择 **GitHub Actions**（免费，无额外费用）。
+> 想要 push 即发布：建一个对 `huanqwer.github.io` 有 Contents: Read and write 的细粒度 PAT，
+> 在本仓库加名为 `PAGES_DISPATCH_TOKEN` 的 secret（`.github/workflows/notify-root-site.yml` 会自动生效）。
 
 
 

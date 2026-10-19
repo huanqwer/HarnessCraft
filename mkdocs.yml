@@ -8,7 +8,7 @@
 #   python3 tools/build_site.py && mkdocs serve
 
 site_name: HarnessCraft · 老邋遢的 Harness 工程化实践
-site_url: https://huanqwer.github.io/HarnessCraft/
+site_url: https://huanqwer.github.io/
 site_author: 老邋遢
 site_description: >-
   Harness 工程化落地实践：从零构建 AI Harness Coding 商业化项目的方法论、成本控制、

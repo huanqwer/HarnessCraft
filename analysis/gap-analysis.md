@@ -158,8 +158,11 @@ grep -n "devin" .gitignore       # .devin/   ← 被显式排除
 
 ### 4.2 CI / CD
 
-- `.github/workflows/deploy-pages.yml`：push main → 生成 → `mkdocs build --strict` → 发布 Pages
+- 站点发布在根站仓库 `huanqwer.github.io`：拉取本仓库 → `tools/build_site.py --strict` → `mkdocs build --strict`
+  → `actions/upload-pages-artifact` → `actions/deploy-pages`（15 分钟定时刷新；配 `PAGES_DISPATCH_TOKEN`
+  后变为 push 即发布）
 - `.github/workflows/content-check.yml`：PR 上跑内容体检 + 严格构建（断链、锚点、模板缺失直接失败）
+- `.github/workflows/notify-root-site.yml`：向根站发 `repository_dispatch`（未配 secret 时安全跳过）
 
 ### 4.3 协作入口
 
@@ -190,5 +193,5 @@ grep -n "devin" .gitignore       # .devin/   ← 被显式排除
 3. **决定 `.devin/` 的公开边界**：开放则新建 `harness/` 并改 README；不开放则改掉 README 的失效指引。
 4. **打版本 tag**：例如 `v1.0-系列首发`，配套 GitHub Release，和自家 ISIER 的归档要求闭环。
 5. **配图去单点依赖**：把 Cloudinary 图片按 `assets/posts/<slug>/` 落进仓库，或至少导出包一份备份。
-6. **给站点配自定义域名**（可选，仍是免费的）：`CNAME` 文件 + 域名解析，Pages 侧无需付费。
+6. **给站点配自定义域名**（可选，仍是免费的）：根站仓库加 `CNAME` 文件 + 域名解析，Pages 侧无需付费。
 7. **补文章摘要**：每篇开头加 1～2 句"读完你能拿到什么"，分享与 RSS 摘要都受益。
