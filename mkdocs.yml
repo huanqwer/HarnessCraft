@@ -1,0 +1,145 @@
+# HarnessCraft 站点配置
+#
+# 内容真源：posts/（文章）+ README.md（系列阅读顺序、主题分类）
+# 站点源  ：docs/（由 tools/build_site.py 生成，不入库）
+# 构建产物：site/（由 mkdocs build 生成，不入库）
+#
+# 本地预览：
+#   python3 tools/build_site.py && mkdocs serve
+
+site_name: HarnessCraft · 老邋遢的 Harness 工程化实践
+site_url: https://huanqwer.github.io/HarnessCraft/
+site_author: 老邋遢
+site_description: >-
+  Harness 工程化落地实践：从零构建 AI Harness Coding 商业化项目的方法论、成本控制、
+  Skills / Rules / Workflows 工程组件，以及 ISIER 五层落地架构。
+copyright: Copyright &copy; 2026 老邋遢 · MIT License
+
+repo_url: https://github.com/huanqwer/HarnessCraft
+repo_name: huanqwer/HarnessCraft
+edit_uri: edit/main/posts/
+
+theme:
+  name: material
+  language: zh
+  # 用系统字体，不加载 Google Fonts（国内网络可用、首屏更快）
+  font: false
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.edit
+    - content.tooltips
+
+nav:
+  - 首页: index.md
+  - 系列文章: series.md
+  - 文章列表: blog/index.md
+  - 关于作者: about.md
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+  - blog:
+      blog_dir: blog
+      blog_toc: true
+      post_dir: "{blog}/posts"
+      post_date_format: yyyy-MM-dd
+      post_url_date_format: yyyy/MM/dd
+      post_url_format: "{date}/{slug}"
+      post_excerpt: optional
+      post_readtime: true
+      archive: true
+      archive_name: 归档
+      categories: true
+      categories_name: 分类
+      authors: true
+      authors_file: "{blog}/.authors.yml"
+      pagination: true
+      pagination_per_page: 10
+  - rss:
+      match_path: "blog/posts/.*"
+      use_git: false
+      use_material_blog: true
+      date_from_meta:
+        as_creation: date
+        as_update: date
+      categories:
+        - categories
+      length: 20
+      pretty_print: true
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/huanqwer
+      name: GitHub
+  # 站点启用后可在 Google Search Console 配置验证（可选）
+  generator: false
+
+# 站内链接校验：构建时把断链当警告，CI 里用 --strict 直接失败
+validation:
+  links:
+    absolute_links: info
+    unrecognized_links: warn
+    anchors: warn

@@ -1,0 +1,34 @@
+name: 内容勘误 / 文章问题
+description: 报告文章中的错误、过时说法或难以落地的地方
+title: "[勘误] "
+labels: ["documentation"]
+body:
+  - type: input
+    id: article
+    attributes:
+      label: 涉及文章
+      description: 文章标题，或 posts/ 下的文件名
+      placeholder: 例如：我自研的Harness五层架构原理
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: 问题是什么
+      description: 原文怎么写的、你期望怎么改
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 依据
+      description: 复现步骤、报错信息、官方文档链接等（Harness 的第一原则：结论要有证据）
+    validations:
+      required: false
+  - type: checkboxes
+    id: willing
+    attributes:
+      label: 是否愿意提 PR
+      options:
+        - label: 我可以直接提 PR 修正
+          required: false

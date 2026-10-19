@@ -1,0 +1,37 @@
+name: Content check
+
+# 文章内容与站点构建的守门人：PR / push 都跑一遍
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  content:
+    name: 文章体检 + 站点构建
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      # 检查：README 系列文章表与 posts/ 是否一一对应、slug 是否冲突、
+      # 文章是否缺头部模板、是否能取到 git 日期
+      - name: 内容体检
+        run: python tools/build_site.py --check --strict
+
+      # 检查：站内链接、锚点、生成站点是否零警告
+      - name: 构建站点（严格模式）
+        run: |
+          python tools/build_site.py
+          mkdocs build --strict

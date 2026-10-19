@@ -1,0 +1,30 @@
+name: 站点 / 工程问题
+description: 报告站点构建、部署、样式或仓库工程化相关的问题
+title: "[站点] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: 问题范围
+      options:
+        - 站点页面/样式
+        - 构建脚本 tools/build_site.py
+        - GitHub Actions / Pages 部署
+        - 仓库工程结构（CI、模板、规范）
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: 现象与复现
+      description: 执行的命令、看到的输出、期望的结果
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: 环境
+      placeholder: 例如 macOS 26.6 / Python 3.12 / 本地 mkdocs serve
+    validations:
+      required: false

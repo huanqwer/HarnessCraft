@@ -65,6 +65,11 @@ temp/
 *.bak.*
 *.bak
 
+# 站点构建产物（真源是 posts/ 与 site-assets/，docs/ 与 site/ 每次构建重建）
+docs/
+site/
+.cache/
+
 # Cloudinary credentials (never commit to remote repo)
 **/cloudinary_config.json
 **/cloudinary_config*.json

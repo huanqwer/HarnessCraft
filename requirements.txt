@@ -1,0 +1,6 @@
+# HarnessCraft 站点构建依赖
+# 本地预览与 GitHub Actions 使用同一份锁定版本，保证构建结果一致
+mkdocs==1.6.1
+mkdocs-material==9.7.7
+mkdocs-rss-plugin==1.17.4
+pypinyin==0.55.0

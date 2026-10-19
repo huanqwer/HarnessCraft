@@ -1,0 +1,82 @@
+/* HarnessCraft 站点样式微调
+ *
+ * 构建时会整体拷贝到 docs/assets/stylesheets/extra.css。
+ * 目标：中文字体栈、长文可读性、首页/系列页表格观感。
+ */
+
+:root {
+  --hc-font-cjk: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+    "Source Han Sans SC", "Noto Sans CJK SC", system-ui, -apple-system,
+    "Segoe UI", Roboto, sans-serif;
+}
+
+body,
+input,
+.md-typeset {
+  font-family: var(--hc-font-cjk);
+}
+
+.md-typeset {
+  font-size: 0.8rem;
+  line-height: 1.9;
+}
+
+/* 隐藏左侧栏的落地页（首页/系列页）内容列会撑到 938px，正文行宽过长；
+   这里只约束"散文"类块级元素，表格仍然吃满整行 */
+.md-typeset > p,
+.md-typeset > ul,
+.md-typeset > ol,
+.md-typeset > blockquote {
+  max-width: 42rem;
+}
+
+/* 标题对比度：Material 默认把 h1 压成浅灰、标题字重只有 300，长文里显得发虚 */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.md-typeset h1 {
+  margin-bottom: 0.8em;
+}
+
+/* 文章正文里的二级标题加一条细线，长文分段更清楚 */
+.md-typeset h2 {
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding-bottom: 0.3em;
+  margin-top: 2.2em;
+}
+
+/* 原文是"一句一段"的写法，收紧段间距，否则页面被拉得很长 */
+.md-typeset p {
+  margin: 0.6em 0;
+}
+
+/* 文章头部的引用块（项目来源 + 作者简介）弱化处理，不抢正文 */
+.md-typeset blockquote {
+  border-left: 3px solid var(--md-accent-fg-color);
+  color: var(--md-default-fg-color--light);
+  font-size: 0.74rem;
+}
+
+/* 系列文章表：窄屏可横向滚动，序号列不折行 */
+.md-typeset__table {
+  overflow-x: auto;
+}
+
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td:first-child {
+  white-space: nowrap;
+}
