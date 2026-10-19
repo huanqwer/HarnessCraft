@@ -20,21 +20,37 @@
 
 
 
+## 在线阅读
+
+- 站点（GitHub Pages 免费托管）：<https://huanqwer.github.io/HarnessCraft/>
+- RSS 订阅：<https://huanqwer.github.io/HarnessCraft/feed_rss_created.xml>
+- 全部文章按时间/分类浏览：<https://huanqwer.github.io/HarnessCraft/blog/>
+- 内容与工程化缺口分析： [analysis/gap-analysis.md](analysis/gap-analysis.md)
+
+站点由 `posts/` 自动生成，仓库里的 Markdown 始终是唯一真源。
+
+
+
 ## 项目结构
 
-```
+```text
 HarnessCraft/
-├── posts/              # 系列文章（平铺，不按章节分组）
-├── .devin/             # 工程化落地实践
-│   ├── skills/         # 可复用 Skills（配图、任务执行、反思等）
-│   ├── rules/          # 全局规则（Rollback、记忆、反思等）
-│   └── ...
+├── posts/                  # 系列文章（平铺，不按章节分组）——内容唯一真源
+├── templates/              # 文章模板与发布检查清单
+├── tools/build_site.py     # 站点生成器（补元数据、生成 docs/、内容体检）
+├── site-assets/            # 站点样式等静态资源（构建时拷入 docs/assets/）
+├── mkdocs.yml              # 站点配置（MkDocs Material）
+├── requirements.txt        # 站点依赖（本地与 CI 共用同一份锁版本）
+├── .github/                # CI（Pages 发布 + 内容体检）与 issue / PR 模板
+├── analysis/               # 内容与工程化缺口分析
 ├── README.md
 ├── CONTRIBUTING.md
 └── LICENSE
 ```
 
-> `.devin/` 目录是本项目的工程化核心，包含实际开发中使用的 Skills、Rules、Workflows 和 Memories。这些不是示例代码，而是真实生产环境中验证过的 Harness 组件。
+> `.devin/` 是作者本机私有的 Agent 配置（已在 `.gitignore` 中排除），不随仓库发布。
+> 文章里提到的 Skills / Rules / Workflows 目前以方法论形式写在正文中；
+> 是否把可公开的部分整理成 `harness/` 目录一并开源，见 [缺口分析](analysis/gap-analysis.md) 第 2 节。
 
 
 
@@ -157,7 +173,30 @@ Rollback 不是流程节点，而是保障 ISIER 安全执行的横切机制，�
 | 10 | [别人的AI为什么越来越好用](posts/别人的AI为什么越来越好用.md) | 自我进化 |
 | 11 | [看看真实企业内部的Harness+FDE改造如何落地的](posts/看看真实企业内部的Harness+FDE改造如何落地的.md) | 最佳实践 |
 
-> 文章正文均由作者手写，配图由 Agent 在配图阶段统一生成技术图表并插入。如果你对文章中提到的 Skills、Rules、Workflows 感兴趣，可以直接查看 `.devin/` 目录下的工程化实现。
+> 文章正文均由作者手写，配图由 Agent 在配图阶段统一生成技术图表并插入。
+> 文章里提到的 Skills / Rules / Workflows 目前以方法论形式写在正文中；
+> 作者本机的 `.devin/` 配置不随仓库发布，是否另建 `harness/` 目录开放，见 [缺口分析](analysis/gap-analysis.md) 第 2 节。
+
+
+
+## 本地预览与发布站点
+
+站点是"从 `posts/` 现场生成"的，不维护第二份正文：`docs/` 与 `site/` 都是构建产物，不入库。
+
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+
+python3 tools/build_site.py --check --strict   # 内容体检（README 表 ↔ posts/ 双向核对）
+python3 tools/build_site.py                    # 生成 docs/
+mkdocs serve                                   # 本地预览 http://127.0.0.1:8000
+mkdocs build --strict                          # 生成 site/（断链、锚点问题直接失败）
+```
+
+推送到 `main` 后由 `.github/workflows/deploy-pages.yml` 自动发布到 GitHub Pages；
+PR 会先由 `.github/workflows/content-check.yml` 跑一遍体检与严格构建。
+
+> 首次启用：仓库 Settings → Pages → Source 选择 **GitHub Actions**（免费，无需额外费用）。
 
 
 
